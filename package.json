@@ -1,0 +1,28 @@
+{
+  "name": "plural-ro",
+  "version": "1.0.0",
+  "description": "Display the correct form of the nouns in the romanian language when counted.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcambose/plural-ro.git"
+  },
+  "keywords": [
+    "language",
+    "plural",
+    "nouns"
+  ],
+  "author": "Alexandru Cambose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexcambose/plural-ro/issues"
+  },
+  "homepage": "https://github.com/alexcambose/plural-ro#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
