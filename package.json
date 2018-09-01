@@ -4,7 +4,7 @@
   "description": "Display the correct form of the nouns in the romanian language when counted.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/alexcambose/plural-ro#readme",
   "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.2.0"
+    "ava": "^0.25.0"
   }
 }
