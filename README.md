@@ -24,10 +24,14 @@ const pluralro = require('plural-ro').pluralro;
 pluralro(1, 'obliect', 'obiecte'); // 1 obliect
 pluralro(1, 'obliect', 'obiecte', 'n'); // un obliect
 pluralro(1, 'obliect', 'obiecte', 'n', true); // Un obliect
+pluralro(0, 'obliect', 'obiecte', 'n'); // niciun obliect
+pluralro(0, 'obliect', 'obiecte', 'n', true); // Niciun obliect
 
 pluralro(123, 'sticla', 'sticle'); // 123 de sticle
 pluralro(1, 'sticla', 'sticle', 'f'); // o sticla
 pluralro(1, 'sticla', 'sticle', 'f', true); // O sticla
+pluralro(0, 'sticla', 'sticle', 'f'); // nicio sticla
+pluralro(1, 'sticla', 'sticle', 'f', true); // Nicio sticla
 ```
 
 ## API
