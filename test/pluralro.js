@@ -18,6 +18,10 @@ test('with replaceOne enabled', t => {
     t.true(pluralro(1, 'girafa', 'girafe', 'f') === 'o girafa');
     t.true(pluralro(1, 'girafa', 'girafe', 'n') === 'un girafa');
     t.true(pluralro(1, 'girafa', 'girafe', 'm') === 'un girafa');
+
+    t.true(pluralro(0, 'girafa', 'girafe', 'f') === 'nicio girafa');
+    t.true(pluralro(0, 'girafa', 'girafe', 'n') === 'niciun girafa');
+    t.true(pluralro(0, 'girafa', 'girafe', 'm') === 'niciun girafa');
 });
 test('with ucfirst enabled', t => {
     t.true(pluralro(1, 'girafa', 'girafe', 'f', true) === 'O girafa');

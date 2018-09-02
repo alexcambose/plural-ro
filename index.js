@@ -22,10 +22,17 @@ const pluralro = (count, singularWord, pluralWord, replaceOne = false, ucfirst =
     // add "de" preposition if needed
     if(de(count)) plural = 'de ' + plural;
 
-    if(typeof replaceOne === 'string' && count === 1) {
-        if(replaceOne === 'f') plural = 'o ' + plural;
-        // the masculine and neutral are the same
-        else if(replaceOne === 'm' || replaceOne === 'n') plural = 'un ' + plural;
+    if(typeof replaceOne === 'string') {
+        if(count === 0) {
+            if(replaceOne === 'f') plural = 'nicio ' + plural;
+            // the masculine and neutral are the same
+            else if(replaceOne === 'm' || replaceOne === 'n') plural = 'niciun ' + plural;
+        } else if (count === 1) {
+            if(replaceOne === 'f') plural = 'o ' + plural;
+            // the masculine and neutral are the same
+            else if(replaceOne === 'm' || replaceOne === 'n') plural = 'un ' + plural;
+        }
+
     } else {
         plural = count + ' ' + plural;
     }
